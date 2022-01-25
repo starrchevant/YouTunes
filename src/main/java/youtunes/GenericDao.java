@@ -1,28 +1,17 @@
 package youtunes;
 
 import java.util.List;
-
-//This is GenericDao class that allows you to store  
-public class GenericDao<E, K>{
+ 
+public interface GenericDao<E, K>{
 	
-	public void add(E entity){
-		
-	}
+	public void add(E entity);	
 	
-	public List<E> list(){
-		return null;
-	}
+	public List<E> list();
 	
-	public void update(E entity) {
-		
-	}
+	public void update(E entity); 
 	
-	public E find(K key) {
-		return null;
-	}
+	public E find(K key);
 	
-	public void remove(K key) {
-		
-	}
+	public void remove(K key);
 
 }

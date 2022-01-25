@@ -4,15 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class JDBCManager {
+public class JdbcManager {
 
 	private String jdbcUrl;
 	private String jdbcUserName;
 	private String jdbcPassword;
 	private Connection conn;
 
-	public JDBCManager() {
-		jdbcUrl = "jdbc:mysql://localhost:3306/Youtunes";
+	public JdbcManager() {
+		jdbcUrl = "jdbc:mysql://localhost:3306/youtunes";
 		jdbcUserName = "youtunes_user";
 		jdbcPassword = "MySQL8IsGreat!";
 
@@ -24,7 +24,7 @@ public class JDBCManager {
 		}
 	}
 	
-	public Connection getConn(){
+	public Connection getConn() {
 		try {
 			conn = DriverManager.getConnection(jdbcUrl, jdbcUserName, jdbcPassword);
 		return conn;
@@ -33,8 +33,8 @@ public class JDBCManager {
 		catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return null;
 		}
-		return null;
 	}
 	public void closeConn(){
 		try {
@@ -46,15 +46,3 @@ public class JDBCManager {
 		
 	};
 }
-
-/*
- * 
- * create the classes they talk about
- * 
- * Private variables: jdbcUrl, jdbcUserName, jdbcPassword Constructor:
- * initialize the variables with the credentials to connect to your MySQL
- * database. Add a try/catch block to call the MySQL jdbc driver. For example,
- * “Class.forName(“com.mysql.cj.jdbc.Driver.” If you are not sure how to add the
- * MySQL database driver or need assistance, refer to the courses textbook in
- * CSD 430.
- */

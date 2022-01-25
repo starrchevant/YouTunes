@@ -5,6 +5,14 @@ public class Artist {
 	private long id;
 	private String firstName;
 	private String lastName;
+	
+	public Artist(long i, String f, String l){
+		this.id = i;
+		this.firstName = f;
+		this.lastName = l;
+		
+	}
+	
 	public long getiD() {
 		return id;
 	}
@@ -33,4 +41,3 @@ public class Artist {
 	
 
 }
-//needs a getters and setters and a two string function to convert to a string
