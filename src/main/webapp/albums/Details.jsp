@@ -34,13 +34,12 @@ if (request.getMethod().equals("GET")) {
 	<br/>
 	
 	<label for="genre"> Album Genre:</label>
-	<label for="genre"> Album Genre:</label>
-	<select value="<%=a.getGenre() %>" name="genre">
+	<select name="genre">
 	<option value="none">--Select--</option>
-    <option value="classical">Classical</option>
-    <option value="jazz">Jazz</option>
-    <option value="blues">Blues</option>
-    <option value="rock">Rock</option>
+    <option value="Classical" <%=a.getGenre().equals("Classical")?"selected":"" %>>Classical</option>
+    <option value="Jazz" <%=a.getGenre().equals("Jazz")?"selected":"" %>>Jazz</option>
+    <option value="Blues" <%=a.getGenre().equals("Blues")?"selected":"" %>>Blues</option>
+    <option value="Rock" <%=a.getGenre().equals("Rock")?"selected":"" %>>Rock</option>
     </select>
 	<br/>
 	<br/>

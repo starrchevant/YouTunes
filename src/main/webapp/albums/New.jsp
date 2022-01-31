@@ -31,10 +31,10 @@ New Album
 	<label for="genre"> Album Genre:</label>
 	<select name="genre">
 	<option value="none">--Select--</option>
-    <option value="classical">Classical</option>
-    <option value="jazz">Jazz</option>
-    <option value="blues">Blues</option>
-    <option value="rock">Rock</option>
+    <option value="Classical">Classical</option>
+    <option value="Jazz">Jazz</option>
+    <option value="Blues">Blues</option>
+    <option value="Rock">Rock</option>
   </select>
 	<br/>
 	<br/>
